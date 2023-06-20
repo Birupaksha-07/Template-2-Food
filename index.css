@@ -1,0 +1,174 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0 10rem 0 10rem;
+    font-family: "Karma", sans-serif;
+}
+
+/* Top nav bar */
+.top-nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+.top-nav-items{
+    font-size: 1.5rem;
+}
+.top-nav-items:hover{
+    cursor: pointer;
+}
+/* Side Navbar */
+#side-nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 100vh;
+    background-color:white;
+    position: fixed;
+    transition: all 1s ease;
+    /* overflow: hidden; */
+    transform: translateX(-310px);
+    
+}
+#side-nav.active{
+    transform: translateX(0);
+}
+.side-nav-items{
+    text-decoration: none;
+    padding: 15px;
+    font-size: 1.8rem;
+    width: 100%;
+}
+.side-nav-items:hover{
+    background-color: rgb(177, 177, 169);
+}
+
+
+
+/* Food Section */
+.food-section{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1.5rem 0;
+    padding: 0 2rem;
+
+}
+.food-items{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 .7rem ;
+}
+.food-items-img{
+    width: 100%;
+}
+.food-items-img img{
+    width: 100%;
+}
+.food-items h2,p{
+    text-align: center;
+}
+/* .food-items p{
+    text-align: justify;
+} */
+
+/* Pagination */
+.pagination{
+    padding: 10px;
+    text-align: center;
+    padding-bottom: 1.5rem;
+    margin-top: 3rem;
+}
+.pagination a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 5px 12px;
+    color: black;
+}
+.pagination .active{
+    background-color: black;
+    color: white;
+}
+.pagination a:hover{
+    background-color: black;
+    color: white;
+}
+
+/* Chef Section  */
+.food-man{
+    border-top: 1.5px solid rgba(246, 207, 207, 0.574);
+    padding-top: 2rem;
+    margin-bottom: 6rem;
+}
+.food-man h2{
+    text-align: center;
+}
+.food-man-img{
+    text-align: center;
+}
+.food-man-paragraph{
+    text-align: justify;
+}
+
+/* Footer Section  */
+.footer-section{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-top: 4rem;
+    border-top: 1.5px solid rgba(246, 207, 207, 0.574);
+}
+.footer-item{
+    width: 33.33%;
+    padding-right:2rem ;
+}
+.footer p{
+    text-align: justify;
+}
+.blog-posts-container{
+    display: flex;
+    flex-direction: column;
+}
+.blog-posts{
+    display: flex;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    height: 12vh;
+    border-bottom: 1.5px solid rgba(246, 207, 207, 0.574);
+}
+.blog-posts p {
+    background-color: blue;
+}
+.blog-posts-img{
+    width: 3vw;
+    height: 3vh;
+}
+.blog-posts-about{
+    display: flex;
+    flex-direction: column;
+    padding-left: 6px;
+}
+.popular-tags span{
+    background-color: #616161;
+    color: white;
+    font-size: 0.8rem;
+    padding: 2px;
+    border-radius: 4px;
+    margin: 4px;
+    display: inline-block;
+}
+.popular-tags span:hover{
+    cursor: pointer;
+}
+.blog-posts:hover{
+    background-color: #6161615b;
+}
